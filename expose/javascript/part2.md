@@ -38,7 +38,8 @@
 17. The result of the function is the list [2, 4, 6]. When we call modifyArray([1,2,3], callback), we create a new array, newArray, and then each iteration of the forLoop adds a new value to newArray, that is the iteration’s respective value from the parameter array after going through the callback function, which corresponds to doSomething() which doubles the value.
 18. Answer in part2-question18.js
 19. Print Order:
-    1
-    4
-    3
-    2
+    
+        1
+        4
+        3
+        2
