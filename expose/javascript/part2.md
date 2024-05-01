@@ -12,20 +12,22 @@
 10. Line 12 prints “3”. This is the value of the variable length, which is set to the length of the array with 3 elements that is passed to the function. We declared length with const, but never tried to change its value nor access it outside of its block-scope, so there is no error.
 11. This function returns the list [50, 100, 150]. This is a list that contains all the discounted prices for each corresponding price from the prices parameter. It returns the list as the discounted array. The variables were declared with const but there is no scope issue because all variables were only accessed within their block-scope, and even though we pushed values to discounted, we never reassigned the variable, so there is no error.
 12. Student Object Access:
-    A. student.name
-    B. student['Grad Year']
-    C. student.greeting()
-    D. student['Favorite Teacher'].name
-    E. student.courseLoad[0]
+    
+        A. student.name
+        B. student['Grad Year']
+        C. student.greeting()
+        D. student['Favorite Teacher'].name
+        E. student.courseLoad[0]
 13. Type Conversion Examples:
-    A. Output: ‘32’ – This is because the first value is a string so JS treats the addition as string concatenation.
-    B. Output: 1 – This is because for subtraction, JS treats the values including the string as integers and performs the numerical operation.
-    C. Output: 3 – This is because for integer arithmetic, JS treats null as a 0, and then performs the numerical operation.
-    D. Output: 3null – This is because once again the first value is a string so JS treats this as string concatenation.
-    E. Output: 4 – This is because for booleans false is treated as 0 and true is treated as 1, and the booleans can be used as integers in arithmetic operations.
-    F. Output: 0 – Like stated in E, the boolean false is treated as 0, and like stated in C, null is also treated as 0. When adding them like integers we get 0 + 0, which is 0.
-    G. Output: 3undefined. This is because once again the first value is a string so JS treats this as string concatentation.
-    H. Output: NaN. This is because for subtraction, JS tries to treat the values like integers and tries to subtract undefined (which doesn’t have a numerical equivalent) from 3, which is not a valid operation.
+
+        A. Output: ‘32’ – This is because the first value is a string so JS treats the addition as string concatenation.
+        B. Output: 1 – This is because for subtraction, JS treats the values including the string as integers and performs the numerical operation.
+        C. Output: 3 – This is because for integer arithmetic, JS treats null as a 0, and then performs the numerical operation.
+        D. Output: 3null – This is because once again the first value is a string so JS treats this as string concatenation.
+        E. Output: 4 – This is because for booleans false is treated as 0 and true is treated as 1, and the booleans can be used as integers in arithmetic operations.
+        F. Output: 0 – Like stated in E, the boolean false is treated as 0, and like stated in C, null is also treated as 0. When adding them like integers we get 0 + 0, which is 0.
+        G. Output: 3undefined. This is because once again the first value is a string so JS treats this as string concatentation.
+        H. Output: NaN. This is because for subtraction, JS tries to treat the values like integers and tries to subtract undefined (which doesn’t have a numerical equivalent) from 3, which is not a valid operation.
 14. Comparisons and Output:
     
         A. Output: true – This is because for inequalities between a string and number, JS treats the values as integers if possible, and 2 is greater than 1.
@@ -34,11 +36,11 @@
         D. Output: false – This is because the ‘===’ is the string equality operator which takes into account both type and value.
         E. Output: false – This is because even with the ‘==’ operator applying type coercion to the comparison, we are then checking for equality between 1 (true) and 2.
         F. Output: true – This is because Boolean(2) is true because 2 is considered truthy. We are then comparing true with true which satisfies the string equality operation because both the type and value match.
-16. The ‘==’ and ‘===’ operators both check for equality but in different ways. The ‘==’ operator compares equality after coercing the compared values to the same type, but the ‘===’ operator only returns true for values that are both equal in type and value.
-17. Answer in part2-question16.js
-18. The result of the function is the list [2, 4, 6]. When we call modifyArray([1,2,3], callback), we create a new array, newArray, and then each iteration of the forLoop adds a new value to newArray, that is the iteration’s respective value from the parameter array after going through the callback function, which corresponds to doSomething() which doubles the value.
-19. Answer in part2-question18.js
-20. Print Order:
+15. The ‘==’ and ‘===’ operators both check for equality but in different ways. The ‘==’ operator compares equality after coercing the compared values to the same type, but the ‘===’ operator only returns true for values that are both equal in type and value.
+16. Answer in part2-question16.js
+17. The result of the function is the list [2, 4, 6]. When we call modifyArray([1,2,3], callback), we create a new array, newArray, and then each iteration of the forLoop adds a new value to newArray, that is the iteration’s respective value from the parameter array after going through the callback function, which corresponds to doSomething() which doubles the value.
+18. Answer in part2-question18.js
+19. Print Order:
     
         1
         4
