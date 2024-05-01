@@ -12,12 +12,11 @@
 10. Line 12 prints “3”. This is the value of the variable length, which is set to the length of the array with 3 elements that is passed to the function. We declared length with const, but never tried to change its value nor access it outside of its block-scope, so there is no error.
 11. This function returns the list [50, 100, 150]. This is a list that contains all the discounted prices for each corresponding price from the prices parameter. It returns the list as the discounted array. The variables were declared with const but there is no scope issue because all variables were only accessed within their block-scope, and even though we pushed values to discounted, we never reassigned the variable, so there is no error.
 12. Student Object Access:
-    
-        A. student.name
-        B. student['Grad Year']
-        C. student.greeting()
-        D. student['Favorite Teacher'].name
-        E. student.courseLoad[0]
+    * A. student.name
+    * B. student['Grad Year']
+    * C. student.greeting()
+    * D. student['Favorite Teacher'].name
+    * E. student.courseLoad[0]
 13. Type Conversion Examples:
 
         A. Output: ‘32’ – This is because the first value is a string so JS treats the addition as string concatenation.
