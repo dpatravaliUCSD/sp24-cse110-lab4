@@ -27,17 +27,18 @@
     G. Output: 3undefined. This is because once again the first value is a string so JS treats this as string concatentation.
     H. Output: NaN. This is because for subtraction, JS tries to treat the values like integers and tries to subtract undefined (which doesn’t have a numerical equivalent) from 3, which is not a valid operation.
 14. Comparisons and Output:
-    A. Output: true – This is because for inequalities between a string and number, JS treats the values as integers if possible, and 2 is greater than 1.
-    B. Output: false – This is because for string comparisons, JS compares in order based on their corresponding characters. The first character of ‘2’ is not less than the first character of ‘12’.
-    C. Output: true – This is because the ‘==’ operator applies type coercion to the comparison, so we can compare the value of a number with the value of a numerical string.
-    D. Output: false – This is because the ‘===’ is the string equality operator which takes into account both type and value.
-    E. Output: false – This is because even with the ‘==’ operator applying type coercion to the comparison, we are then checking for equality between 1 (true) and 2.
-    F. Output: true – This is because Boolean(2) is true because 2 is considered truthy. We are then comparing true with true which satisfies the string equality operation because both the type and value match.
-15. The ‘==’ and ‘===’ operators both check for equality but in different ways. The ‘==’ operator compares equality after coercing the compared values to the same type, but the ‘===’ operator only returns true for values that are both equal in type and value.
-16. Answer in part2-question16.js
-17. The result of the function is the list [2, 4, 6]. When we call modifyArray([1,2,3], callback), we create a new array, newArray, and then each iteration of the forLoop adds a new value to newArray, that is the iteration’s respective value from the parameter array after going through the callback function, which corresponds to doSomething() which doubles the value.
-18. Answer in part2-question18.js
-19. Print Order:
+    
+        A. Output: true – This is because for inequalities between a string and number, JS treats the values as integers if possible, and 2 is greater than 1.
+        B. Output: false – This is because for string comparisons, JS compares in order based on their corresponding characters. The first character of ‘2’ is not less than the first character of ‘12’.
+        C. Output: true – This is because the ‘==’ operator applies type coercion to the comparison, so we can compare the value of a number with the value of a numerical string.
+        D. Output: false – This is because the ‘===’ is the string equality operator which takes into account both type and value.
+        E. Output: false – This is because even with the ‘==’ operator applying type coercion to the comparison, we are then checking for equality between 1 (true) and 2.
+        F. Output: true – This is because Boolean(2) is true because 2 is considered truthy. We are then comparing true with true which satisfies the string equality operation because both the type and value match.
+16. The ‘==’ and ‘===’ operators both check for equality but in different ways. The ‘==’ operator compares equality after coercing the compared values to the same type, but the ‘===’ operator only returns true for values that are both equal in type and value.
+17. Answer in part2-question16.js
+18. The result of the function is the list [2, 4, 6]. When we call modifyArray([1,2,3], callback), we create a new array, newArray, and then each iteration of the forLoop adds a new value to newArray, that is the iteration’s respective value from the parameter array after going through the callback function, which corresponds to doSomething() which doubles the value.
+19. Answer in part2-question18.js
+20. Print Order:
     
         1
         4
